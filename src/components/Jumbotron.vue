@@ -12,6 +12,7 @@
 <!-- ripetizione di codice -->
 <!-- linear gradient -->
 <!-- icona -->
+<!-- button ripetuti -->
 
 </template>
 
