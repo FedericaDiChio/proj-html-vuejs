@@ -6,7 +6,7 @@
     <nav>
       <ul class="d-flex">
         <li v-for="(menu, index) in menus" :key="index">
-          <a class="px-4 font-grey" 
+          <a class="px-4 text-grey" 
           :class="{active: menu.current}" 
           :href="menu.url">{{ menu.text }}</a>
         </li>
