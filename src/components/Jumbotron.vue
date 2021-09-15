@@ -9,6 +9,10 @@
     </p>
     <div><i class="fab fa-youtube"></i></div>
   </div>
+<!-- ripetizione di codice -->
+<!-- linear gradient -->
+<!-- icona -->
+
 </template>
 
 <script>
@@ -20,3 +24,4 @@ export default {};
     font-size: 65px;
 }
 </style>
+
