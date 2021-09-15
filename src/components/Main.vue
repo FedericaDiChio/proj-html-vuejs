@@ -1,5 +1,9 @@
 <template>
-    <main></main>
+    <main class="container">
+        <section id="jumbotron">
+            
+        </section>
+    </main>
 </template>
 
 <script>

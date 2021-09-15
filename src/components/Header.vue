@@ -3,10 +3,12 @@
     <figure>
       <img :src="logo" alt="logo" />
     </figure>
-    <nav class="d-flex">
-      <ul v-for="(menu, index) in menus" :key="index">
-        <li>
-          <a class="text-light" :href="menu.url">{{ menu.text }}</a>
+    <nav>
+      <ul class="d-flex">
+        <li v-for="(menu, index) in menus" :key="index">
+          <a class="px-4 font-grey" 
+          :class="{active: menu.current}" 
+          :href="menu.url">{{ menu.text }}</a>
         </li>
       </ul>
     </nav>
@@ -20,5 +22,12 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+   ul li {  
+    a:hover,
+    a.active {
+      color: #ffff;
+    }
+   }
+
 </style>
