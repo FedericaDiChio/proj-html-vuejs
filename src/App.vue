@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :logo="logo" :menus="menus"/>
     <Main />
     <Footer />
   </div>
@@ -17,10 +17,42 @@ export default {
     Header,
     Main,
     Footer
-  }
+  },
+  data() {
+    return {
+      logo: require("@/assets/logo.png"),
+      menus: [
+        {
+          text: "Home",
+          url: "#",
+        },
+        {
+          text: "Services",
+          url: "#",
+        },
+        {
+          text: "About",
+          url: "#",
+        },
+        {
+          text: "Videos",
+          url: "#",
+        },
+        {
+          text: "Blog",
+          url: "#",
+        },
+        {
+          text: "Store",
+          url: "#",
+        },
+      ],
+    };
+  },
 }
 </script>
 
 <style lang="scss">
+@import "/styles/style.scss";
 
 </style>
