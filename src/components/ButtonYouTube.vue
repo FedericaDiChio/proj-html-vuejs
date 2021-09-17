@@ -1,5 +1,5 @@
 <template>
-  <button class="me-4 px-5 py-2 btn-bl">Visit my YouTube Channel</button>
+  <button class="me-4 px-5 py-2 btn-bl"><i class="fab fa-youtube"> Visit my YouTube Channel</i></button>
 </template>
 
 <script>
@@ -8,7 +8,8 @@ name: "ButtonYouTube",
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../assets/styles/_mixin.scss";
 
 
 </style>

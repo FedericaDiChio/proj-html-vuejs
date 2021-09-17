@@ -15,8 +15,12 @@
                   >{{ menu.text }}</a
                 >
               </li>
-              <span class="news ms-2">new</span>
-              <button class="ms-5 px-4 py-2">Schedule a workout</button>
+              <li class="news ms-2">new</li>
+              <li><button class="ms-5 px-4 py-2">Schedule a workout</button></li>
+              <li>
+                <a href=""><i class="fas fa-shopping-cart mx-5 text-grey"></i></a>
+                <a href=""><i class="fas fa-search text-grey"></i></a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -35,6 +39,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/styles/_mixin.scss";
 li {
+  i:hover, 
   a:hover,
   a.active {
     color: #ffff;

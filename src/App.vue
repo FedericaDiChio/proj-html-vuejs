@@ -2,7 +2,7 @@
   <div id="app">
     <Header :logo="logo" :menus="menus"/>
     <Main />
-    <Footer />
+    <Footer  :footerLink="footerLink"/>
   </div>
 </template>
 
@@ -53,6 +53,7 @@ export default {
           current: false,
         },
       ],
+      
     };
   },
 }

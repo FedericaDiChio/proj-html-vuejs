@@ -8,7 +8,7 @@
     </p>
     <div class="mt-5 myButtons">
       <ButtonYouTube />
-      <button class="px-5 py-2">Buy Avada today</button>
+      <button class="px-5 py-2">Buy Avada Today <i class="fas fa-arrow-right"></i></button>
     </div>
   </div>
 </template>

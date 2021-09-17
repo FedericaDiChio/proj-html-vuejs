@@ -25,6 +25,7 @@ export default {
 .card-box {
   height: 300px;
   width: 400px;
+  position: relative;
   img {
     @include borders;
   }

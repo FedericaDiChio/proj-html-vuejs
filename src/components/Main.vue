@@ -38,7 +38,7 @@
         <div class="row">
           <div class="col mb-4 d-flex justify-content-between">
             <h4>Featured Playlist</h4>
-            <p>View all videos</p>
+            <p>View all videos <i class="fas fa-chevron-right"></i></p>
           </div>
         </div>
         <div class="row">
