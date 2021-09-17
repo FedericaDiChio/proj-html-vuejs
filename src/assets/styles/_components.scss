@@ -22,13 +22,15 @@ header {
 
 // JUMBOTRON 
 #jumbotron {
-    margin-top: 100px;
-    @include bg-image;
-    @include center("vertical");
     background-image: linear-gradient(to right, #000 45%, transparent), url("./assets/img/slider82x-scaled.jpg");
-    background-position: top;
-    height: 600px;
     position: relative;
+    @include jumbo;
+}
+
+#mailing-list {
+    @include jumbo;
+    background-image: linear-gradient(to right, #000 45%, transparent), url("./assets/img/banner1-2x.jpg");
+
 }
 
 // FIRST QUOTE
@@ -40,9 +42,12 @@ header {
     background-image: linear-gradient(to top left, #bc042b, #6b0c7a, #4154fe);
     .container {
       width: 1070px;
-      figure img {
-          width: 60px;
-      
+      figure {
+        @include center;
+            img {
+                width: 60px; 
+            
+            }
       }
     }
   }

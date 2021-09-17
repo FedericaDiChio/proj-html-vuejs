@@ -4,6 +4,15 @@
     background-repeat: no-repeat;
 }
 
+@mixin jumbo {
+    margin-top: 100px;
+    @include bg-image;
+    @include center("vertical");
+    background-position: top;
+    height: 600px;
+
+}
+
 // BORDER RADIUS 
 @mixin borders {
     border-radius: 0px 5px 50px 0;
