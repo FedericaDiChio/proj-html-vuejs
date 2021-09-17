@@ -9,11 +9,11 @@
       </div>
     </section>
     <!-- SECTION TRAINING CARDS  -->
-    <!-- <section class="container">
+    <section class="container">
       <div class="card-container">
-        <Cards class="me-5" v-for="(training, index) in trainings" :key="index" :training="training"/>
+        <Cards v-for="(training, index) in trainings" :key="index" :training="training"/>
       </div>
-    </section> -->
+    </section>
     <!-- SECTION QUOTE  -->
      <section id="quote" class="mb-5">
       <div class="container">
@@ -38,11 +38,11 @@
 </template>
 
 <script>
-// import Cards from "../components/Cards.vue"
+import Cards from "../components/Cards.vue"
 import Hero from "../components/Hero.vue";
 import Jumbotron from "../components/Jumbotron.vue";
 export default {
-  components: { Jumbotron, Hero, },
+  components: { Jumbotron, Hero, Cards },
   name: "Main",
   data() {
     return {
@@ -50,17 +50,18 @@ export default {
         {
           title: "Crossfit workout",
           text: "Push your limits",
-          img: require("@/assets/img/box1-2x.jpg"),
+          img: require("@/assets/img/service6-2x.jpg")
+          
         },
         {
           title: "New gym apparel",
           text: "Look good, feel good",
-          img: require("@/assets/img/box3-2x.jpg"),
+          img: require("@/assets/img/box1-2x.jpg"),
         },
         {
           title: "Team training",
           text: "Find a partner",
-          img: require("@/assets/img/service6-2x.jpg"),
+          img: require("@/assets/img/box3-2x.jpg"),
         },
       ],
     };

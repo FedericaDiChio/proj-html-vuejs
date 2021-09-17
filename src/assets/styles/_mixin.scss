@@ -1,9 +1,15 @@
-
+// BACKGROUND IMAGE 
 @mixin bg-image {
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+// BORDER RADIUS 
+@mixin borders {
+    border-radius: 0px 5px 50px 0;
+}
+
+// DISPLAY FLEX 
 @mixin center($type: "both"){
     display: flex;
     @if $type == "vertical" {
@@ -16,7 +22,9 @@
     }
 }
 
-@mixin buttons($type: "both") {
+
+// BUTTONS - RIVEDERE!!!
+@mixin buttons($type: "all") {
     border-radius: 20px;
     color: #ffff;
     @if $type == "blue" {
@@ -29,8 +37,4 @@
         background-color: #0d0b12;
         border: 2px solid #78787a;
     }
-}
-
-@mixin borders {
-    border-radius: 0px 5px 50px 0;
 }

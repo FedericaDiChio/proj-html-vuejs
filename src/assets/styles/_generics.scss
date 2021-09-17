@@ -1,5 +1,3 @@
-
-
 body {
     height: 100vh;
 }
@@ -18,4 +16,15 @@ li {
 
 .myButtons {
     @include center("vertical");
+}
+
+
+.card-container {
+    @include center;
+    position: absolute;
+    bottom: -100px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+   
 }
