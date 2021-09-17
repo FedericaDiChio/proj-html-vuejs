@@ -4,6 +4,12 @@
     background-repeat: no-repeat;
 }
 
+// BORDER RADIUS 
+@mixin borders {
+    border-radius: 0px 5px 50px 0;
+}
+
+// JUMBOTRON PROPERTY 
 @mixin jumbo {
     margin-top: 100px;
     @include bg-image;
@@ -13,12 +19,7 @@
 
 }
 
-// BORDER RADIUS 
-@mixin borders {
-    border-radius: 0px 5px 50px 0;
-}
-
-// DISPLAY FLEX 
+// DISPLAY FLEX CENTER
 @mixin center($type: "both"){
     display: flex;
     @if $type == "vertical" {
@@ -30,7 +31,6 @@
         justify-content: center;
     }
 }
-
 
 // BUTTONS - RIVEDERE!!!
 @mixin buttons($type: "all") {

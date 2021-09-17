@@ -22,7 +22,7 @@ li {
 .card-container {
     @include center;
     position: absolute;
-    bottom: -100px;
+    bottom: -80px;
     z-index: 1;
     left: 50%;
     transform: translate(-50%);
