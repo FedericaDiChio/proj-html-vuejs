@@ -2,27 +2,38 @@
   <div class="col">
     <p class="fs-4 text-sienna">Certified fitness professional</p>
     <h1 class="text-light">Take control of your health</h1>
-    <p>geroglifico strano</p>
+    <p>geroglifico</p>
     <p class="fs-5 text-grey">
       Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor
-      sit amet
+      sit amet.
     </p>
-    <div><i class="fab fa-youtube"></i></div>
+    <div class="mt-5 myButtons">
+        <ButtonYouTube />
+        <button class="px-5 py-2">Buy Avada today</button>
+    </div> 
   </div>
-<!-- ripetizione di codice -->
-<!-- linear gradient -->
-<!-- icona -->
-<!-- button ripetuti -->
 
 </template>
 
 <script>
-export default {};
+import ButtonYouTube from "../components/ButtonYouTube.vue" 
+export default {
+  name: "Jumbotron",
+  components: { ButtonYouTube },
+};
 </script>
 
 <style lang="scss" scoped>
-    h1 {
-    font-size: 65px;
+@import "../assets/styles/_mixin.scss";
+
+.btn-bl {
+  @include buttons ("blue");
 }
+
+button {
+  @include buttons;
+}
+
+
 </style>
 

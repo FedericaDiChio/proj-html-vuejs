@@ -20,37 +20,35 @@ export default {
   },
   data() {
     return {
-      logo: require("@/assets/logo.png"),
+      logo: require("@/assets/img/logo.png"),
       menus: [
         {
           text: "Home",
           url: "#",
-          current: true,
         },
         {
           text: "Services",
           url: "#",
-          current: false,
         },
         {
           text: "About",
           url: "#",
-          current: false,
         },
         {
           text: "Videos",
           url: "#",
-          current: false,
         },
         {
           text: "Blog",
           url: "#",
-          current: false,
         },
         {
           text: "Store",
           url: "#",
-          current: false,
+        },
+         {
+          text: "Store",
+          url: "#",
         },
       ],
     };
@@ -59,6 +57,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "/styles/style.scss";
+@import "./assets/styles/style.scss";
 
 </style>

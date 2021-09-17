@@ -1,0 +1,21 @@
+
+
+body {
+    height: 100vh;
+}
+
+
+h1 {
+    font-size: $hero-title;
+}
+
+li {
+    list-style-type: none;
+    a {
+        text-decoration: none;
+    }
+}
+
+.myButtons {
+    @include center("vertical");
+}

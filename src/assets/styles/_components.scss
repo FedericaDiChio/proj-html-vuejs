@@ -1,0 +1,62 @@
+// HEADER 
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 100px;
+    background-color: #060606;
+    ul {
+        @include center;      
+        .news {
+            width: 40px;
+            height: 25px;
+            background-color: rgb(255,249,65);
+            border-radius: 3px;
+            font-size: 12px;
+            @include center;
+        }
+        
+    }
+}
+
+// JUMBOTRON 
+#jumbotron {
+    margin-top: 100px;
+    @include bg-image;
+    @include center("vertical");
+    background-image: linear-gradient(to right, #000 45%, transparent), url("./assets/img/slider82x-scaled.jpg");
+    background-position: top;
+    height: 600px;
+}
+
+// FIRST QUOTE
+#quote {
+    @include center;
+    height: 700px;
+    background-image: linear-gradient(to top left, #bc042b, #6b0c7a, #4154fe);
+    position: relative;
+    .container {
+      width: 1070px;
+      figure img {
+          width: 60px;
+      
+      }
+    }
+  }
+
+// HERO 
+#hero {
+    position: relative; 
+        .box {
+            height: 750px;
+            width: 800px;
+            background-image: url("./assets/img/service15-2x.jpg");
+            @include bg-image;
+            position: absolute;
+            top: -100px;
+            @include borders;
+        
+        }
+    
+}

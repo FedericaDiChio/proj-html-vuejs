@@ -1,0 +1,36 @@
+
+@mixin bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin center($type: "both"){
+    display: flex;
+    @if $type == "vertical" {
+        align-items: center;
+    } @else if $type == "horizontal" {
+        justify-content: center;
+    } @else {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@mixin buttons($type: "both") {
+    border-radius: 20px;
+    color: #ffff;
+    @if $type == "blue" {
+        background-color: #4257ef;     
+        border: 2px solid #4257ef;    
+    } @else if $type == "green" {
+        background-color: #41C457;
+        border: 2px solid #41C457;
+    } @else {
+        background-color: #0d0b12;
+        border: 2px solid #78787a;
+    }
+}
+
+@mixin borders {
+    border-radius: 0px 5px 50px 0;
+}
