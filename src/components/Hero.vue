@@ -8,7 +8,7 @@
       <p class="fs-4 text-blue">Turn up your workouts</p>
       <h1 class="text-dark">The best health & fitness adivce online</h1>
       <img src="../assets/img/unnamed.jpg" alt="logo" class="m-3">
-      <p class="fs-5 text-grey">
+      <p class="fs-5 text-dark">
         Arcu ei facilisi ut quisque placerat nunc habitant. Magna sempre mauris,
         venenatis, leo integer sit pellentesque
       </p>

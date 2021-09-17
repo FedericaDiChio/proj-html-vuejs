@@ -1,6 +1,6 @@
 <template>
 <div class="px-3 card-box">
-  <img :src="training.img" class="img-fluid" alt="training">
+  <img :src="getImg(training.img)" class="img-fluid" alt="training">
   <!-- <div class="caption">
     <h4 class="text-white">{{ training.title }}</h4>
     <p class="card-text">{{ training.text }}</p>
@@ -14,6 +14,11 @@
 export default {
     name: "Cards",
     props: ["training"],
+      methods: {
+      getImg(path){
+          return require ("@/assets/img/" + path);
+      }
+  }
 }
 </script>
 

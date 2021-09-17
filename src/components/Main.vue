@@ -50,22 +50,23 @@ export default {
         {
           title: "Crossfit workout",
           text: "Push your limits",
-          img: require("@/assets/img/service6-2x.jpg")
+          img: "service6-2x.jpg"
           
         },
         {
           title: "New gym apparel",
           text: "Look good, feel good",
-          img: require("@/assets/img/box1-2x.jpg"),
+          img: "box1-2x.jpg",
         },
         {
           title: "Team training",
           text: "Find a partner",
-          img: require("@/assets/img/box3-2x.jpg"),
+          img: "box3-2x.jpg",
         },
       ],
     };
   },
+
 };
 </script>   
 
