@@ -22,14 +22,14 @@ header {
 
 // JUMBOTRON 
 #jumbotron {
-    background-image: linear-gradient(to right, #000 45%, transparent), url("./assets/img/slider82x-scaled.jpg");
+    background-image: linear-gradient(to right, #060606 45%, transparent 75%), url("./assets/img/slider82x-scaled.jpg");
     position: relative;
     @include jumbo;
 }
 
 #mailing-list {
     @include jumbo;
-    background-image: linear-gradient(to right, #000 45%, transparent), url("./assets/img/banner1-2x.jpg");
+    background-image: linear-gradient(to right, #060606 45%, transparent 75%), url("./assets/img/banner1-2x.jpg");
 
 }
 
