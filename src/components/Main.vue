@@ -11,38 +11,54 @@
     <!-- SECTION TRAINING CARDS  -->
     <section class="container">
       <div class="card-container">
-        <Cards v-for="(training, index) in trainings" :key="index" :training="training"/>
+        <Cards
+          v-for="(training, index) in trainings"
+          :key="index"
+          :training="training"
+        />
       </div>
     </section>
     <!-- SECTION QUOTE  -->
-     <section id="quote" class="mb-5">
+    <section id="quote" class="mb-5">
       <div class="container">
-        <h1 class="fs-1 text-light text-center">
-          "How you respond to the challenge in the second half will determine
-          what you become after the game,<br />
-          whether you are a winner or a loser."
-        </h1>
-        <p class="text-center m-3">geroglifico</p>
-        <figure class="text-center">
-          <img class="rounded-circle" src="../assets/img/avatar-1-2x.jpg" alt="avatar" />
-          <span class="m-3 text-light fs-6">Brad Johnson</span>
-          <span class="text-grey">Las Vegas</span>
-        </figure>
+        <JumboQuote />
       </div>
     </section>
     <!-- SECTION HERO  -->
     <section id="hero">
-        <Hero />   
+      <Hero />
+    </section>
+    <!-- SECTION PLAYLIST  -->
+    <section id="playlist">
+      <div class="container">
+        <div class="row">
+          <div class="col mb-4 d-flex justify-content-between">
+            <h4>Featured Playlist</h4>
+            <p>View all videos</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex  justify-content-between">
+            <Playlist
+              v-for="(playlist, index) in playlists"
+              :key="index"
+              :playlist="playlist"
+            />
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </template>
 
 <script>
-import Cards from "../components/Cards.vue"
-import Hero from "../components/Hero.vue";
 import Jumbotron from "../components/Jumbotron.vue";
+import Cards from "../components/Cards.vue";
+import JumboQuote from "../components/JumboQuote.vue";
+import Hero from "../components/Hero.vue";
+import Playlist from "../components/Playlist.vue";
 export default {
-  components: { Jumbotron, Hero, Cards },
+  components: { Jumbotron,  Cards, JumboQuote, Hero, Playlist, },
   name: "Main",
   data() {
     return {
@@ -50,8 +66,7 @@ export default {
         {
           title: "Crossfit workout",
           text: "Push your limits",
-          img: "service6-2x.jpg"
-          
+          img: "service6-2x.jpg",
         },
         {
           title: "New gym apparel",
@@ -64,13 +79,27 @@ export default {
           img: "box3-2x.jpg",
         },
       ],
+      playlists: [
+        {
+          title: "Thighs & glute workout",
+          text: "Increase your mobility",
+          image: "video2-2x.jpg",
+        },
+        {
+          title: "Lift, firm & perk up",
+          text: "Feel young again",
+          image: "video7-2x.jpg",
+        },
+        {
+          title: "Slim & trim your waist",
+          text: "Shed those extra pounds",
+          image: "video9-2x.jpg",
+        },
+      ],
     };
   },
-
 };
 </script>   
 
 <style lang="scss">
-
-
 </style>
